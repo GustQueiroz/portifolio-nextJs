@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rimraf .next && rimraf node_modules/.cache",
+    "rebuild": "npm run clean && npm install && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -65,6 +67,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
