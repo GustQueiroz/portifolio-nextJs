@@ -6,22 +6,21 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Plataforma E-commerce",
+    title: "E-commerce Platform",
     description:
-      "Uma solução e-commerce full-stack construída com Node.js, React e MongoDB.",
-    tech: ["Node.js", "React", "MongoDB", "Express.js"],
-    github: "https://github.com/yourusername/ecommerce-platform",
-    live: "https://ecommerce-platform-demo.vercel.app",
+      "A full-stack e-commerce solution built with React and Firebase, featuring a responsive design and real-time updates.",
+    tech: ["React", "Firebase", "Tailwind CSS", "Bootstrap", "ApexCharts"],
+    github: "https://github.com/StarlineImports/Starline_App",
+    live: "https://starline-imports.vercel.app",
   },
   {
-    title: "App de Gerenciamento de Tarefas",
+    title: "Task Management System",
     description:
-      "Uma aplicação de gerenciamento de tarefas com Vue.js e Firebase com atualizações em tempo real.",
-    tech: ["Vue.js", "Firebase", "Vuex", "Tailwind CSS"],
-    github: "https://github.com/yourusername/task-management-app",
-    live: "https://task-app-demo.vercel.app",
+      "A robust task management system built with C# and .NET, featuring CRUD operations and user management.",
+    tech: ["C#", ".NET", "SQL Server", "Entity Framework"],
+    github: "https://github.com/GustQueiroz/SistemaDeTarefas",
+    live: null,
   },
-  // Add more projects as needed
 ];
 
 const fadeInUp = {
@@ -84,14 +83,38 @@ export default function Projects() {
               </div>
 
               <div className="flex space-x-4">
-                <Button variant="outline" size="sm" className="hover-scale">
-                  <Github className="h-4 w-4 mr-2" />
-                  GitHub
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="hover-scale"
+                  asChild
+                >
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-4 w-4 mr-2" />
+                    GitHub
+                  </a>
                 </Button>
-                <Button variant="outline" size="sm" className="hover-scale">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  Demo
-                </Button>
+                {project.live && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="hover-scale"
+                    asChild
+                  >
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Demo
+                    </a>
+                  </Button>
+                )}
               </div>
             </motion.div>
           ))}

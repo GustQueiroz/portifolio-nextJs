@@ -33,7 +33,7 @@ export default function Contact() {
           className="text-3xl font-bold mb-12 text-gradient text-center"
           variants={fadeInUp}
         >
-          Contato
+          Contact
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -42,8 +42,8 @@ export default function Contact() {
               className="mb-8 text-muted-foreground"
               variants={fadeInUp}
             >
-              Sinta-se à vontade para entrar em contato comigo para qualquer
-              consulta ou oportunidade de colaboração.
+              Feel free to get in touch with me for any inquiries or
+              collaboration opportunities.
             </motion.p>
 
             <motion.div className="space-y-6" variants={container}>
@@ -54,7 +54,7 @@ export default function Contact() {
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <span>seu.email@exemplo.com</span>
+                <span>your.email@example.com</span>
               </motion.div>
 
               <motion.div
@@ -81,20 +81,23 @@ export default function Contact() {
 
           <motion.form className="space-y-6" variants={fadeInUp}>
             <motion.div variants={fadeInUp}>
-              <Input placeholder="Seu Nome" className="bg-card border-border" />
+              <Input
+                placeholder="Your Name"
+                className="bg-card border-border"
+              />
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <Input
                 type="email"
-                placeholder="Seu Email"
+                placeholder="Your Email"
                 className="bg-card border-border"
               />
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <Textarea
-                placeholder="Sua Mensagem"
+                placeholder="Your Message"
                 rows={4}
                 className="bg-card border-border"
               />
@@ -102,7 +105,7 @@ export default function Contact() {
 
             <motion.div variants={fadeInUp}>
               <Button type="submit" className="w-full hover-scale">
-                Enviar Mensagem
+                Send Message
               </Button>
             </motion.div>
           </motion.form>

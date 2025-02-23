@@ -21,30 +21,28 @@ export default function About() {
           className="text-3xl font-bold mb-8 text-gradient"
           variants={fadeInUp}
         >
-          Sobre Mim
+          About Me
         </motion.h2>
 
         <motion.p
           className="text-lg mb-6 text-muted-foreground leading-relaxed"
           variants={fadeInUp}
         >
-          Sou um Desenvolvedor Full-Stack apaixonado com mais de 4 anos de
-          experiência na construção de aplicações web escaláveis e de alta
-          performance. Minha expertise está em Node.js, TypeScript, React e
-          Vue.js, permitindo-me criar sistemas robustos e experiências frontend
-          envolventes.
+          I'm a passionate Full-Stack Developer with over 4 years of experience
+          building scalable and high-performance web applications. My expertise
+          lies in Node.js, TypeScript, React, and Vue.js, enabling me to create
+          robust systems and engaging frontend experiences.
         </motion.p>
 
         <motion.p
           className="text-lg text-muted-foreground leading-relaxed"
           variants={fadeInUp}
         >
-          Prospero em ambientes dinâmicos e gosto de levar projetos do conceito
-          ao deploy, sempre focando em performance, segurança e experiência do
-          usuário. Seja desenvolvendo APIs RESTful, criando UIs responsivas ou
-          otimizando queries de banco de dados, estou comprometido em entregar
-          soluções de alta qualidade que atendam e superem as expectativas dos
-          clientes.
+          I thrive in dynamic environments and enjoy taking projects from
+          concept to deployment, always focusing on performance, security, and
+          user experience. Whether developing RESTful APIs, creating responsive
+          UIs, or optimizing database queries, I'm committed to delivering
+          high-quality solutions that meet and exceed client expectations.
         </motion.p>
       </motion.div>
     </motion.section>

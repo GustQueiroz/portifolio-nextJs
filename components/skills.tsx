@@ -45,7 +45,7 @@ export default function Skills() {
           className="text-3xl font-bold mb-12 text-gradient text-center"
           variants={fadeInUp}
         >
-          Habilidades
+          Skills
         </motion.h2>
 
         <motion.div
