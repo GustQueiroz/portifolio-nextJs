@@ -2,6 +2,7 @@
 
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const skills = [
   "Node.js",
@@ -33,6 +34,8 @@ const container = {
 };
 
 export default function Skills() {
+  const { t } = useTranslations();
+
   return (
     <motion.section
       initial="initial"
@@ -45,7 +48,7 @@ export default function Skills() {
           className="text-3xl font-bold mb-12 text-gradient text-center"
           variants={fadeInUp}
         >
-          Skills
+          {t("skills.title")}
         </motion.h2>
 
         <motion.div

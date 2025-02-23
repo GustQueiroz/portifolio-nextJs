@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -21,6 +22,8 @@ const container = {
 };
 
 export default function Contact() {
+  const { t } = useTranslations();
+
   return (
     <motion.section
       initial="initial"
@@ -33,7 +36,7 @@ export default function Contact() {
           className="text-3xl font-bold mb-12 text-gradient text-center"
           variants={fadeInUp}
         >
-          Contact
+          {t("contact.title")}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -42,8 +45,7 @@ export default function Contact() {
               className="mb-8 text-muted-foreground"
               variants={fadeInUp}
             >
-              Feel free to get in touch with me for any inquiries or
-              collaboration opportunities.
+              {t("contact.description")}
             </motion.p>
 
             <motion.div className="space-y-6" variants={container}>
@@ -54,7 +56,7 @@ export default function Contact() {
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <span>your.email@example.com</span>
+                <span>contato.gustavoqlima@gmail.com</span>
               </motion.div>
 
               <motion.div
@@ -82,7 +84,7 @@ export default function Contact() {
           <motion.form className="space-y-6" variants={fadeInUp}>
             <motion.div variants={fadeInUp}>
               <Input
-                placeholder="Your Name"
+                placeholder={t("contact.form.name")}
                 className="bg-card border-border"
               />
             </motion.div>
@@ -90,14 +92,14 @@ export default function Contact() {
             <motion.div variants={fadeInUp}>
               <Input
                 type="email"
-                placeholder="Your Email"
+                placeholder={t("contact.form.email")}
                 className="bg-card border-border"
               />
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <Textarea
-                placeholder="Your Message"
+                placeholder={t("contact.form.message")}
                 rows={4}
                 className="bg-card border-border"
               />
@@ -105,7 +107,7 @@ export default function Contact() {
 
             <motion.div variants={fadeInUp}>
               <Button type="submit" className="w-full hover-scale">
-                Send Message
+                {t("contact.form.submit")}
               </Button>
             </motion.div>
           </motion.form>

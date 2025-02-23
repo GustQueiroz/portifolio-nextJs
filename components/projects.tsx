@@ -3,41 +3,42 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-
-const projects = [
-  {
-    title: "E-commerce Platform",
-    description:
-      "A full-stack e-commerce solution built with React and Firebase, featuring a responsive design and real-time updates.",
-    tech: ["React", "Firebase", "Tailwind CSS", "Bootstrap", "ApexCharts"],
-    github: "https://github.com/StarlineImports/Starline_App",
-    live: "https://starline-imports.vercel.app",
-  },
-  {
-    title: "Task Management System",
-    description:
-      "A robust task management system built with C# and .NET, featuring CRUD operations and user management.",
-    tech: ["C#", ".NET", "SQL Server", "Entity Framework"],
-    github: "https://github.com/GustQueiroz/SistemaDeTarefas",
-    live: null,
-  },
-];
-
-const fadeInUp = {
-  initial: { y: 20, opacity: 0 },
-  animate: { y: 0, opacity: 1 },
-  transition: { duration: 0.5 },
-};
-
-const container = {
-  animate: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Projects() {
+  const { t } = useTranslations();
+
+  const projects = [
+    {
+      title: t("projects.ecommerce.title"),
+      description: t("projects.ecommerce.description"),
+      tech: ["React", "Firebase", "Tailwind CSS", "Bootstrap", "ApexCharts"],
+      github: "https://github.com/StarlineImports/Starline_App",
+      live: "https://starline-imports.vercel.app",
+    },
+    {
+      title: t("projects.taskManager.title"),
+      description: t("projects.taskManager.description"),
+      tech: ["C#", ".NET", "SQL Server", "Entity Framework"],
+      github: "https://github.com/GustQueiroz/SistemaDeTarefas",
+      live: null,
+    },
+  ];
+
+  const fadeInUp = {
+    initial: { y: 20, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 0.5 },
+  };
+
+  const container = {
+    animate: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     <motion.section
       initial="initial"
@@ -50,7 +51,7 @@ export default function Projects() {
           className="text-3xl font-bold mb-12 text-gradient text-center"
           variants={fadeInUp}
         >
-          Projetos
+          {t("projects.title")}
         </motion.h2>
 
         <motion.div

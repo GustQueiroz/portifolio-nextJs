@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "role": "Développeur Full-Stack & Designer",
+    "description": "Spécialisé dans la construction d'applications web évolutives utilisant Node.js, TypeScript, React et Vue.js."
+  },
+  "about": {
+    "title": "À Propos",
+    "description1": "Je suis un développeur Full-Stack passionné avec plus de 4 ans d'expérience dans la construction d'applications web évolutives et performantes. Mon expertise réside dans Node.js, TypeScript, React et Vue.js, me permettant de créer des systèmes robustes et des expériences frontend engageantes.",
+    "description2": "Je m'épanouis dans les environnements dynamiques et j'aime mener des projets du concept au déploiement, en me concentrant toujours sur la performance, la sécurité et l'expérience utilisateur. Que ce soit en développant des APIs RESTful, en créant des interfaces utilisateur responsives ou en optimisant des requêtes de base de données, je m'engage à fournir des solutions de haute qualité qui répondent et dépassent les attentes des clients."
+  },
+  "projects": {
+    "title": "Projets",
+    "ecommerce": {
+      "title": "Plateforme E-commerce",
+      "description": "Une solution e-commerce full-stack construite avec React et Firebase, avec un design responsive et des mises à jour en temps réel."
+    },
+    "taskManager": {
+      "title": "Système de Gestion des Tâches",
+      "description": "Un système robuste de gestion des tâches construit avec C# et .NET, avec des opérations CRUD et la gestion des utilisateurs."
+    },
+    "buttons": {
+      "github": "GitHub",
+      "demo": "Démo"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "N'hésitez pas à me contacter pour toute demande ou opportunité de collaboration.",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message"
+    }
+  },
+  "skills": {
+    "title": "Compétences"
+  }
+}

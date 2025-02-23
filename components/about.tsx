@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -9,6 +10,8 @@ const fadeInUp = {
 };
 
 export default function About() {
+  const { t } = useTranslations();
+
   return (
     <motion.section
       initial="initial"
@@ -21,28 +24,21 @@ export default function About() {
           className="text-3xl font-bold mb-8 text-gradient"
           variants={fadeInUp}
         >
-          About Me
+          {t("about.title")}
         </motion.h2>
 
         <motion.p
           className="text-lg mb-6 text-muted-foreground leading-relaxed"
           variants={fadeInUp}
         >
-          I'm a passionate Full-Stack Developer with over 4 years of experience
-          building scalable and high-performance web applications. My expertise
-          lies in Node.js, TypeScript, React, and Vue.js, enabling me to create
-          robust systems and engaging frontend experiences.
+          {t("about.description1")}
         </motion.p>
 
         <motion.p
           className="text-lg text-muted-foreground leading-relaxed"
           variants={fadeInUp}
         >
-          I thrive in dynamic environments and enjoy taking projects from
-          concept to deployment, always focusing on performance, security, and
-          user experience. Whether developing RESTful APIs, creating responsive
-          UIs, or optimizing database queries, I'm committed to delivering
-          high-quality solutions that meet and exceed client expectations.
+          {t("about.description2")}
         </motion.p>
       </motion.div>
     </motion.section>

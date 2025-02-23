@@ -1,20 +1,19 @@
+"use client";
+
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Hero() {
+  const { t } = useTranslations();
+
   return (
     <section className="flex flex-col items-center justify-center min-h-screen text-center p-4">
       <h1 className="text-5xl md:text-7xl font-bold mb-4">
         <span className="text-blue-500">Gustavo Queiroz</span>
       </h1>
-      <h2 className="text-2xl md:text-3xl mb-6">
-        Full-Stack Developer & Designer
-      </h2>
-      <p className="text-xl mb-8 max-w-2xl">
-        I specialize in building scalable web applications
-        <br />
-        using Node.js, TypeScript, React, and Vue.js.
-      </p>
+      <h2 className="text-2xl md:text-3xl mb-6">{t("hero.role")}</h2>
+      <p className="text-xl mb-8 max-w-2xl">{t("hero.description")}</p>
       <div className="flex space-x-4">
         <Button
           variant="outline"
