@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "role": "Desenvolvedor Full-Stack & Designer",
+    "description": "Especializado em construir aplicações web escaláveis usando Node.js, TypeScript, React e Vue.js."
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description1": "Sou um Desenvolvedor Full-Stack apaixonado com mais de 4 anos de experiência na construção de aplicações web escaláveis e de alta performance. Minha expertise está em Node.js, TypeScript, React e Vue.js, permitindo-me criar sistemas robustos e experiências frontend envolventes.",
+    "description2": "Prospero em ambientes dinâmicos e gosto de levar projetos do conceito ao deploy, sempre focando em performance, segurança e experiência do usuário. Seja desenvolvendo APIs RESTful, criando UIs responsivas ou otimizando queries de banco de dados, estou comprometido em entregar soluções de alta qualidade que atendam e superem as expectativas dos clientes."
+  },
+  "projects": {
+    "title": "Projetos",
+    "ecommerce": {
+      "title": "Plataforma E-commerce",
+      "description": "Uma solução e-commerce full-stack construída com React e Firebase, com design responsivo e atualizações em tempo real."
+    },
+    "taskManager": {
+      "title": "Sistema de Gerenciamento de Tarefas",
+      "description": "Um sistema robusto de gerenciamento de tarefas construído com C# e .NET, com operações CRUD e gerenciamento de usuários."
+    },
+    "buttons": {
+      "github": "GitHub",
+      "demo": "Demo"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Sinta-se à vontade para entrar em contato comigo para qualquer consulta ou oportunidade de colaboração.",
+    "form": {
+      "name": "Seu Nome",
+      "email": "Seu Email",
+      "message": "Sua Mensagem",
+      "submit": "Enviar Mensagem"
+    }
+  },
+  "skills": {
+    "title": "Habilidades"
+  }
+}

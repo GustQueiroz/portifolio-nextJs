@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "role": "Full-Stack Developer & Designer",
+    "description": "I specialize in building scalable web applications using Node.js, TypeScript, React, and Vue.js."
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I'm a passionate Full-Stack Developer with over 4 years of experience building scalable and high-performance web applications. My expertise lies in Node.js, TypeScript, React, and Vue.js, enabling me to create robust systems and engaging frontend experiences.",
+    "description2": "I thrive in dynamic environments and enjoy taking projects from concept to deployment, always focusing on performance, security, and user experience. Whether developing RESTful APIs, creating responsive UIs, or optimizing database queries, I'm committed to delivering high-quality solutions that meet and exceed client expectations."
+  },
+  "projects": {
+    "title": "Projects",
+    "ecommerce": {
+      "title": "E-commerce Platform",
+      "description": "A full-stack e-commerce solution built with React and Firebase, featuring a responsive design and real-time updates."
+    },
+    "taskManager": {
+      "title": "Task Management System",
+      "description": "A robust task management system built with C# and .NET, featuring CRUD operations and user management."
+    },
+    "buttons": {
+      "github": "GitHub",
+      "demo": "Demo"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Feel free to get in touch with me for any inquiries or collaboration opportunities.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message"
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  }
+}

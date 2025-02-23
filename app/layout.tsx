@@ -1,6 +1,9 @@
 import type React from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { LanguageProvider } from "@/contexts/language-context";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,11 +23,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
+    <html lang="pt-BR" className={inter.variable} suppressHydrationWarning>
       <body
         className={`${inter.className} bg-background text-foreground antialiased`}
       >
-        <div className="relative flex min-h-screen flex-col">{children}</div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+        >
+          <LanguageProvider>
+            <Navbar />
+            <div className="relative flex min-h-screen flex-col">
+              {children}
+            </div>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
