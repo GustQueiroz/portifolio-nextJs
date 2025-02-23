@@ -1,22 +1,95 @@
 "use client";
 
-import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "@/hooks/useTranslations";
+import Image from "next/image";
 
 const skills = [
-  "Node.js",
-  "TypeScript",
-  "React",
-  "Vue.js",
-  "Express.js",
-  "NestJS",
-  "GraphQL",
-  "REST APIs",
-  "MongoDB",
-  "PostgreSQL",
-  "Docker",
-  "AWS",
+  {
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    level: "Advanced",
+    years: 4,
+  },
+  {
+    name: "Vue.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    level: "Intermediate",
+    years: 4,
+  },
+  {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    level: "Advanced",
+    years: 4,
+  },
+  {
+    name: "Bootstrap",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    level: "Advanced",
+    years: 4,
+  },
+  {
+    name: "Laravel",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+    level: "Intermediate",
+    years: 3,
+  },
+  {
+    name: "PHP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    level: "Intermediate",
+    years: 3,
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    level: "Advanced",
+    years: 3,
+  },
+
+  {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    level: "Advanced",
+    years: 3,
+  },
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    level: "Advanced",
+    years: 3,
+  },
+  {
+    name: "Prisma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+    level: "Advanced",
+    years: 3,
+  },
+  {
+    name: "NestJS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+    level: "Intermediate",
+    years: 2,
+  },
+  {
+    name: "C#",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+    level: "Intermediate",
+    years: 2,
+  },
+  {
+    name: "Quasar",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/quasar/quasar-plain.svg",
+    level: "Intermediate",
+    years: 1,
+  },
+  {
+    name: "Angular",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+    level: "Intermediate",
+    years: 1,
+  },
 ];
 
 const fadeInUp = {
@@ -52,19 +125,31 @@ export default function Skills() {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-3 gap-6"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           variants={container}
         >
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="flex items-center p-4 rounded-lg border border-border hover-scale bg-card"
+              className="flex flex-col items-center p-6 rounded-lg border border-border hover-scale bg-card"
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <CheckCircle className="h-5 w-5 text-primary mr-3" />
-              <span className="text-card-foreground">{skill}</span>
+              <div className="relative w-12 h-12 mb-4">
+                <Image
+                  src={skill.icon}
+                  alt={skill.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-lg font-medium text-card-foreground mb-2">
+                {skill.name}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {skill.level} • {skill.years} years
+              </span>
             </motion.div>
           ))}
         </motion.div>
