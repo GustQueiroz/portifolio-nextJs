@@ -114,23 +114,6 @@ export default function Projects() {
                       {t("projects.buttons.github")}
                     </a>
                   </Button>
-                  {project.live && (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="hover-scale"
-                      asChild
-                    >
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        {t("projects.buttons.demo")}
-                      </a>
-                    </Button>
-                  )}
                 </div>
               </div>
             </motion.div>
