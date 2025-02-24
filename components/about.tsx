@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "@/hooks/useTranslations";
-import Image from "next/image";
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -28,35 +27,20 @@ export default function About() {
           {t("about.title")}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <motion.p
-              className="text-lg mb-6 text-muted-foreground leading-relaxed"
-              variants={fadeInUp}
-            >
-              {t("about.description1")}
-            </motion.p>
-
-            <motion.p
-              className="text-lg text-muted-foreground leading-relaxed"
-              variants={fadeInUp}
-            >
-              {t("about.description2")}
-            </motion.p>
-          </div>
-
-          <motion.div
+        <div className="space-y-6">
+          <motion.p
+            className="text-lg mb-6 text-muted-foreground leading-relaxed"
             variants={fadeInUp}
-            className="relative aspect-square rounded-2xl overflow-hidden shadow-xl order-first md:order-last"
           >
-            <Image
-              src="/assets/pic.jpeg"
-              alt="Gustavo Queiroz"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-              priority
-            />
-          </motion.div>
+            {t("about.description1")}
+          </motion.p>
+
+          <motion.p
+            className="text-lg text-muted-foreground leading-relaxed"
+            variants={fadeInUp}
+          >
+            {t("about.description2")}
+          </motion.p>
         </div>
       </motion.div>
     </motion.section>

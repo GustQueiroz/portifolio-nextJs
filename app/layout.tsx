@@ -2,6 +2,7 @@ import type React from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { CustomThemeProvider } from "@/contexts/theme-context";
 import { LanguageProvider } from "@/contexts/language-context";
 import Navbar from "@/components/navbar";
 
@@ -32,12 +33,14 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem={false}
         >
-          <LanguageProvider>
-            <Navbar />
-            <div className="relative flex min-h-screen flex-col">
-              {children}
-            </div>
-          </LanguageProvider>
+          <CustomThemeProvider>
+            <LanguageProvider>
+              <Navbar />
+              <div className="relative flex min-h-screen flex-col">
+                {children}
+              </div>
+            </LanguageProvider>
+          </CustomThemeProvider>
         </ThemeProvider>
       </body>
     </html>

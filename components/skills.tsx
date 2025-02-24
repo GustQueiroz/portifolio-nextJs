@@ -6,88 +6,84 @@ import Image from "next/image";
 
 const skills = [
   {
+    name: "Javascript",
+    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
+    years: 4,
+  },
+  {
     name: "React",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    level: "Advanced",
     years: 4,
   },
   {
     name: "Vue.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-    level: "Intermediate",
     years: 4,
   },
   {
     name: "TypeScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    level: "Advanced",
     years: 4,
   },
   {
     name: "Bootstrap",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-    level: "Advanced",
     years: 4,
   },
   {
     name: "Laravel",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
-    level: "Intermediate",
     years: 3,
   },
   {
     name: "PHP",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-    level: "Intermediate",
     years: 3,
   },
   {
     name: "Node.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    level: "Advanced",
     years: 3,
   },
 
   {
     name: "Next.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    level: "Advanced",
     years: 3,
   },
   {
     name: "MySQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-    level: "Advanced",
     years: 3,
   },
   {
     name: "Prisma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
-    level: "Advanced",
     years: 3,
   },
   {
     name: "NestJS",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
-    level: "Intermediate",
     years: 2,
   },
   {
     name: "C#",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-    level: "Intermediate",
+    years: 2,
+  },
+  {
+    name: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     years: 2,
   },
   {
     name: "Quasar",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/quasar/quasar-plain.svg",
-    level: "Intermediate",
     years: 1,
   },
   {
     name: "Angular",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-    level: "Intermediate",
     years: 1,
   },
 ];
@@ -148,7 +144,7 @@ export default function Skills() {
                 {skill.name}
               </span>
               <span className="text-sm text-muted-foreground">
-                {skill.level} • {skill.years} years
+                {skill.years} years
               </span>
             </motion.div>
           ))}

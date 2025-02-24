@@ -42,7 +42,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div variants={fadeInUp}>
             <motion.p
-              className="mb-8 text-muted-foreground"
+              className="mb-8 text-muted-foreground contact-info"
               variants={fadeInUp}
             >
               {t("contact.description")}
@@ -50,7 +50,7 @@ export default function Contact() {
 
             <motion.div className="space-y-6" variants={container}>
               <motion.div
-                className="flex items-center space-x-4 text-muted-foreground"
+                className="flex items-center space-x-4 text-muted-foreground contact-info"
                 variants={fadeInUp}
               >
                 <div className="bg-primary/10 p-3 rounded-full">
@@ -60,7 +60,7 @@ export default function Contact() {
               </motion.div>
 
               <motion.div
-                className="flex items-center space-x-4 text-muted-foreground"
+                className="flex items-center space-x-4 text-muted-foreground contact-info"
                 variants={fadeInUp}
               >
                 <div className="bg-primary/10 p-3 rounded-full">
@@ -70,7 +70,7 @@ export default function Contact() {
               </motion.div>
 
               <motion.div
-                className="flex items-center space-x-4 text-muted-foreground"
+                className="flex items-center space-x-4 text-muted-foreground contact-info"
                 variants={fadeInUp}
               >
                 <div className="bg-primary/10 p-3 rounded-full">

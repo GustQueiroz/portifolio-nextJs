@@ -32,3 +32,107 @@ body {
     @apply transition-transform duration-300 hover:scale-105;
   }
 }
+
+.cyberpunk-theme {
+  background-image: url("/assets/backpic.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #00ff9d;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.95);
+  position: relative;
+}
+
+.cyberpunk-theme::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cyberpunk-theme > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cyberpunk-theme .text-gradient {
+  background: linear-gradient(45deg, #00ff9d, #00b8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.cyberpunk-theme .text-muted-foreground {
+  color: #00b8ff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.cyberpunk-theme .bg-card {
+  background: rgba(0, 0, 0, 0.9);
+  border-color: #00ff9d;
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.3), inset 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.cyberpunk-theme .text-card-foreground {
+  color: #00ff9d;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.cyberpunk-theme .border-border {
+  border-color: #00ff9d;
+}
+
+.cyberpunk-theme .hover-scale:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
+}
+
+.cyberpunk-theme .bg-background\/80 {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cyberpunk-theme button {
+  border-color: #00ff9d;
+  color: #00ff9d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cyberpunk-theme button:hover {
+  background: rgba(0, 255, 157, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
+}
+
+.cyberpunk-theme input,
+.cyberpunk-theme textarea {
+  background: rgba(0, 0, 0, 0.85);
+  border-color: #00ff9d;
+  color: #00ff9d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.cyberpunk-theme input::placeholder,
+.cyberpunk-theme textarea::placeholder {
+  color: rgba(0, 255, 157, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.cyberpunk-theme h1,
+.cyberpunk-theme h2,
+.cyberpunk-theme h3 {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 255, 157, 0.4);
+}
+
+/* Adiciona sombra forte para todos os textos no componente de contato */
+.cyberpunk-theme .contact-info {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

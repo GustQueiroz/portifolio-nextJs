@@ -4,6 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useTranslations } from "@/hooks/useTranslations";
+import Image from "next/image";
 
 export default function Projects() {
   const { t } = useTranslations();
@@ -12,16 +13,33 @@ export default function Projects() {
     {
       title: t("projects.ecommerce.title"),
       description: t("projects.ecommerce.description"),
-      tech: ["React", "Firebase", "Tailwind CSS", "Bootstrap", "ApexCharts"],
+      tech: [
+        {
+          name: "React",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          name: "Firebase",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        },
+      ],
       github: "https://github.com/StarlineImports/Starline_App",
-      live: "https://starline-imports.vercel.app",
     },
     {
       title: t("projects.taskManager.title"),
       description: t("projects.taskManager.description"),
-      tech: ["C#", ".NET", "SQL Server", "Entity Framework"],
+      tech: [
+        {
+          name: "C#",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+        },
+        {
+          name: ".NET",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+        },
+      ],
       github: "https://github.com/GustQueiroz/SistemaDeTarefas",
-      live: null,
+      live: "https://sistema-de-tarefas.vercel.app",
     },
   ];
 
@@ -54,52 +72,33 @@ export default function Projects() {
           {t("projects.title")}
         </motion.h2>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          variants={container}
-        >
+        <motion.div className="grid gap-8" variants={container}>
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-card rounded-lg p-6 border border-border hover-scale"
+              className="p-6 rounded-lg border border-border hover-scale bg-card"
               variants={fadeInUp}
-              whileHover={{ y: -5 }}
             >
-              <h3 className="text-xl font-semibold mb-3 text-card-foreground">
-                {project.title}
-              </h3>
-              <p className="mb-4 text-muted-foreground">
+              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <p className="text-muted-foreground mb-4">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.tech.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  {project.tech.map((tech, idx) => (
+                    <div key={idx} className="relative w-6 h-6">
+                      <Image
+                        src={tech.icon}
+                        alt={tech.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
 
-              <div className="flex space-x-4">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="hover-scale"
-                  asChild
-                >
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    GitHub
-                  </a>
-                </Button>
-                {project.live && (
+                <div className="flex gap-2">
                   <Button
                     variant="outline"
                     size="sm"
@@ -107,15 +106,32 @@ export default function Projects() {
                     asChild
                   >
                     <a
-                      href={project.live}
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
+                      <Github className="h-4 w-4 mr-2" />
+                      {t("projects.buttons.github")}
                     </a>
                   </Button>
-                )}
+                  {project.live && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="hover-scale"
+                      asChild
+                    >
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        {t("projects.buttons.demo")}
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
