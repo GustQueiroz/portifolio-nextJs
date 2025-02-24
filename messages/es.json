@@ -35,5 +35,56 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "journey": {
+    "title": "Mi Trayectoria",
+    "items": [
+      {
+        "year": "2021",
+        "title": "Inicio en Desarrollo",
+        "description": "Comencé mi trayectoria en desarrollo web, enfocándome en tecnologías front-end"
+      },
+      {
+        "year": "2022",
+        "title": "Primer Empleo",
+        "description": "Expandí mis habilidades para desarrollar aplicaciones fullstack utilizando el Framework Laravel"
+      },
+      {
+        "year": "2023",
+        "title": "Mi Software House",
+        "description": "Fundé Skyward Labs junto a dos amigos. Nuestra empresa crea proyectos profesionales a gran escala con tecnologías modernas"
+      },
+      {
+        "year": "2024",
+        "title": "Liderazgo e Innovación",
+        "description": "Lideré equipos de desarrollo e implementé soluciones innovadoras en varios proyectos"
+      },
+      {
+        "year": "2025",
+        "title": "Arquitectura de Proyectos",
+        "description": "Creé nuevos proyectos desde cero, desde la arquitectura hasta el usuario final. Desarrollé soluciones para mis clientes manteniendo máximo rendimiento y seguridad con las tecnologías más actuales"
+      }
+    ]
+  },
+  "whyMe": {
+    "title": "Por Qué Trabajar Conmigo",
+    "items": [
+      {
+        "title": "Solucionador de Problemas",
+        "description": "Abordo cada proyecto como un desafío único, encontrando soluciones creativas y eficientes"
+      },
+      {
+        "title": "Stack Tecnológico Moderno",
+        "description": "Me mantengo actualizado con las últimas tecnologías y mejores prácticas en desarrollo"
+      },
+      {
+        "title": "Enfoque en la Calidad",
+        "description": "Priorizo la calidad del código, el rendimiento y la experiencia del usuario en cada proyecto"
+      },
+      {
+        "title": "Comunicación Efectiva",
+        "description": "Mantengo una comunicación clara y aseguro que los requisitos del proyecto sean completamente entendidos"
+      }
+    ]
   }
 }

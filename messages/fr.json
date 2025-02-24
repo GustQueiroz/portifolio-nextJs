@@ -35,5 +35,56 @@
   },
   "skills": {
     "title": "Compétences"
+  },
+  "journey": {
+    "title": "Mon Parcours",
+    "items": [
+      {
+        "year": "2021",
+        "title": "Début en Développement",
+        "description": "J'ai commencé mon parcours dans le développement web, en me concentrant sur les technologies front-end"
+      },
+      {
+        "year": "2022",
+        "title": "Premier Emploi",
+        "description": "J'ai élargi mes compétences pour développer des applications fullstack en utilisant le Framework Laravel"
+      },
+      {
+        "year": "2023",
+        "title": "Ma Software House",
+        "description": "J'ai fondé Skyward Labs avec deux amis. Notre entreprise crée des projets professionnels à grande échelle avec des technologies modernes"
+      },
+      {
+        "year": "2024",
+        "title": "Leadership & Innovation",
+        "description": "J'ai dirigé des équipes de développement et mis en œuvre des solutions innovantes dans divers projets"
+      },
+      {
+        "year": "2025",
+        "title": "Architecture de Projets",
+        "description": "J'ai créé de nouveaux projets de A à Z, de l'architecture à l'utilisateur final. J'ai développé des solutions pour mes clients en maintenant une performance et une sécurité maximales avec les technologies les plus récentes"
+      }
+    ]
+  },
+  "whyMe": {
+    "title": "Pourquoi Travailler Avec Moi",
+    "items": [
+      {
+        "title": "Résolution de Problèmes",
+        "description": "J'aborde chaque projet comme un défi unique, trouvant des solutions créatives et efficaces"
+      },
+      {
+        "title": "Stack Technologique Moderne",
+        "description": "Je reste à jour avec les dernières technologies et les meilleures pratiques en développement"
+      },
+      {
+        "title": "Focus sur la Qualité",
+        "description": "Je priorise la qualité du code, la performance et l'expérience utilisateur dans chaque projet"
+      },
+      {
+        "title": "Communication Efficace",
+        "description": "Je maintiens une communication claire et m'assure que les exigences du projet sont pleinement comprises"
+      }
+    ]
   }
 }

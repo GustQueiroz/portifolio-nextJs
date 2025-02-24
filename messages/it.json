@@ -35,5 +35,56 @@
   },
   "skills": {
     "title": "Competenze"
+  },
+  "journey": {
+    "title": "Il Mio Percorso",
+    "items": [
+      {
+        "year": "2021",
+        "title": "Inizio nello Sviluppo",
+        "description": "Ho iniziato il mio percorso nello sviluppo web, concentrandomi sulle tecnologie front-end"
+      },
+      {
+        "year": "2022",
+        "title": "Primo Impiego",
+        "description": "Ho ampliato le mie competenze per sviluppare applicazioni fullstack utilizzando il Framework Laravel"
+      },
+      {
+        "year": "2023",
+        "title": "La Mia Software House",
+        "description": "Ho fondato Skyward Labs con due amici. La nostra azienda crea progetti professionali su larga scala con tecnologie moderne"
+      },
+      {
+        "year": "2024",
+        "title": "Leadership e Innovazione",
+        "description": "Ho guidato team di sviluppo e implementato soluzioni innovative in vari progetti"
+      },
+      {
+        "year": "2025",
+        "title": "Architettura dei Progetti",
+        "description": "Ho creato nuovi progetti da zero, dall'architettura all'utente finale. Ho sviluppato soluzioni per i miei clienti mantenendo massime prestazioni e sicurezza con le tecnologie più recenti"
+      }
+    ]
+  },
+  "whyMe": {
+    "title": "Perché Lavorare Con Me",
+    "items": [
+      {
+        "title": "Problem Solver",
+        "description": "Affronto ogni progetto come una sfida unica, trovando soluzioni creative ed efficienti"
+      },
+      {
+        "title": "Stack Tecnologico Moderno",
+        "description": "Mi mantengo aggiornato con le ultime tecnologie e le migliori pratiche di sviluppo"
+      },
+      {
+        "title": "Focus sulla Qualità",
+        "description": "Do priorità alla qualità del codice, alle prestazioni e all'esperienza utente in ogni progetto"
+      },
+      {
+        "title": "Comunicazione Efficace",
+        "description": "Mantengo una comunicazione chiara e mi assicuro che i requisiti del progetto siano pienamente compresi"
+      }
+    ]
   }
 }
