@@ -48,7 +48,7 @@ export default function Navbar() {
           variant="outline"
           size="icon"
           onClick={toggleCyberpunk}
-          className={`rounded-full ${
+          className={`rounded-full hidden md:flex ${
             isCyberpunk ? "border-cyan-500 text-cyan-500" : ""
           }`}
         >

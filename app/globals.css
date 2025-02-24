@@ -136,3 +136,63 @@ body {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
+/* Desabilita o tema cyberpunk em telas móveis */
+@media (max-width: 768px) {
+  .cyberpunk-theme {
+    background-image: none;
+    background-color: rgb(var(--background-rgb));
+    color: rgb(var(--foreground-rgb));
+    text-shadow: none;
+  }
+
+  .cyberpunk-theme::before {
+    display: none;
+  }
+
+  .cyberpunk-theme .text-gradient {
+    background: linear-gradient(to right, rgb(99, 102, 241), rgb(168, 85, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+
+  .cyberpunk-theme .text-muted-foreground {
+    color: rgb(var(--foreground-rgb), 0.6);
+    text-shadow: none;
+  }
+
+  .cyberpunk-theme .bg-card {
+    background-color: rgb(var(--background-rgb));
+    box-shadow: none;
+  }
+
+  .cyberpunk-theme .text-card-foreground {
+    color: rgb(var(--foreground-rgb));
+    text-shadow: none;
+  }
+
+  .cyberpunk-theme .border-border {
+    border-color: rgb(var(--foreground-rgb), 0.1);
+  }
+
+  .cyberpunk-theme button {
+    border-color: rgb(var(--foreground-rgb), 0.1);
+    color: rgb(var(--foreground-rgb));
+    background-color: rgb(var(--background-rgb));
+    text-shadow: none;
+  }
+
+  .cyberpunk-theme input,
+  .cyberpunk-theme textarea {
+    background-color: rgb(var(--background-rgb));
+    border-color: rgb(var(--foreground-rgb), 0.1);
+    color: rgb(var(--foreground-rgb));
+    text-shadow: none;
+  }
+
+  .cyberpunk-theme .contact-info {
+    text-shadow: none;
+    background: transparent;
+  }
+}
