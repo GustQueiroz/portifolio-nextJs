@@ -35,5 +35,56 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "journey": {
+    "title": "Minha Jornada",
+    "items": [
+      {
+        "year": "2021",
+        "title": "Início no Desenvolvimento",
+        "description": "Comecei minha jornada em desenvolvimento web, focando em tecnologias front-end"
+      },
+      {
+        "year": "2022",
+        "title": "Primeiro emprego",
+        "description": "Expandi minhas habilidades para desenvolver aplicações fullstack utilizando do Framework Laravel"
+      },
+      {
+        "year": "2023",
+        "title": "Minha Software House",
+        "description": "Fundei a Skyward Labs, junto de dois amigos. Nossa empresa cria projetos profissionais de grande escala, com tecnologias modernas"
+      },
+      {
+        "year": "2024",
+        "title": "Liderança & Inovação",
+        "description": "Liderei equipes de desenvolvimento e implementei soluções inovadoras em vários projetos"
+      },
+      {
+        "year": "2025",
+        "title": "Arquitetura de Projetos",
+        "description": "Criei novos projetos do zero, desde a arquitetura, ao usuário final. Desenvolvi soluções para meus clientes e mantive a máxima performance e segurança das mais atuais tecnologias"
+      }
+    ]
+  },
+  "whyMe": {
+    "title": "Por Que Trabalhar Comigo",
+    "items": [
+      {
+        "title": "Solucionador de Problemas",
+        "description": "Abordo cada projeto como um desafio único, encontrando soluções criativas e eficientes"
+      },
+      {
+        "title": "Stack Tecnológico Moderno",
+        "description": "Me mantenho atualizado com as últimas tecnologias e melhores práticas em desenvolvimento"
+      },
+      {
+        "title": "Foco na Qualidade",
+        "description": "Priorizo a qualidade do código, performance e experiência do usuário em cada projeto"
+      },
+      {
+        "title": "Comunicação Efetiva",
+        "description": "Mantenho uma comunicação clara e garanto que os requisitos do projeto sejam totalmente compreendidos"
+      }
+    ]
   }
 }

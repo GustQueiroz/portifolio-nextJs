@@ -35,5 +35,56 @@
   },
   "skills": {
     "title": "Skills"
+  },
+  "journey": {
+    "title": "My Journey",
+    "items": [
+      {
+        "year": "2021",
+        "title": "Development Beginning",
+        "description": "Started my journey in web development, focusing on front-end technologies"
+      },
+      {
+        "year": "2022",
+        "title": "First Job",
+        "description": "Expanded my skills to develop fullstack applications using the Laravel Framework"
+      },
+      {
+        "year": "2023",
+        "title": "My Software House",
+        "description": "Founded Skyward Labs with two friends. Our company creates large-scale professional projects using modern technologies"
+      },
+      {
+        "year": "2024",
+        "title": "Leadership & Innovation",
+        "description": "Led development teams and implemented innovative solutions across various projects"
+      },
+      {
+        "year": "2025",
+        "title": "Project Architecture",
+        "description": "Created new projects from scratch, from architecture to end user. Developed solutions for my clients while maintaining maximum performance and security with the latest technologies"
+      }
+    ]
+  },
+  "whyMe": {
+    "title": "Why Work With Me",
+    "items": [
+      {
+        "title": "Problem Solver",
+        "description": "I approach each project as a unique challenge, finding creative and efficient solutions"
+      },
+      {
+        "title": "Modern Tech Stack",
+        "description": "I stay updated with the latest technologies and best practices in development"
+      },
+      {
+        "title": "Quality Focus",
+        "description": "I prioritize code quality, performance, and user experience in every project"
+      },
+      {
+        "title": "Effective Communication",
+        "description": "I maintain clear communication and ensure project requirements are fully understood"
+      }
+    ]
   }
 }

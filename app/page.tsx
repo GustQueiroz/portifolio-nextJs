@@ -6,6 +6,7 @@ import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import Contact from "@/components/contact";
+import Journey from "@/components/journey";
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -26,6 +27,7 @@ export default function Home() {
       >
         <Hero />
         <About />
+        <Journey />
         <Skills />
         <Projects />
         <Contact />
