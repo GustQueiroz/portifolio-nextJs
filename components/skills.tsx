@@ -31,6 +31,11 @@ const skills = [
     years: 4,
   },
   {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    years: 3,
+  },
+  {
     name: "Laravel",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
     years: 3,
@@ -43,12 +48,6 @@ const skills = [
   {
     name: "Node.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    years: 3,
-  },
-
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     years: 3,
   },
   {
