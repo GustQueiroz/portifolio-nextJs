@@ -62,7 +62,7 @@ export default function Projects() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="py-20 px-4"
+      className="py-8 px-8"
     >
       <motion.div className="max-w-4xl mx-auto" variants={fadeInUp}>
         <motion.h2
@@ -71,6 +71,53 @@ export default function Projects() {
         >
           {t("projects.title")}
         </motion.h2>
+
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20"
+          variants={container}
+        >
+          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
+            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
+              <Image
+                src="/macdocremasco.png"
+                alt="Desktop View"
+                width={800}
+                height={450}
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute right-[50%] top-[50%] w-[100%] h-auto z-10">
+              <Image
+                src="/celldocremasco.png"
+                alt="Mobile View"
+                width={700}
+                height={1400}
+                className="object-contain"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
+            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
+              <Image
+                src="/macdocremasco.png"
+                alt="Desktop View"
+                width={800}
+                height={450}
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10">
+              <Image
+                src="/celldocremasco.png"
+                alt="Mobile View"
+                width={700}
+                height={1400}
+                className="object-contain"
+              />
+            </div>
+          </motion.div>
+        </motion.div>
 
         <motion.div className="grid gap-8" variants={container}>
           {projects.map((project, index) => (
