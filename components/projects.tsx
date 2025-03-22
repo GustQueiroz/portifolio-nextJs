@@ -76,46 +76,66 @@ export default function Projects() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20"
           variants={container}
         >
-          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
-            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
-              <Image
-                src="/macdocremasco.png"
-                alt="Desktop View"
-                width={800}
-                height={450}
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute right-[50%] top-[50%] w-[100%] h-auto z-10">
-              <Image
-                src="/celldocremasco.png"
-                alt="Mobile View"
-                width={700}
-                height={1400}
-                className="object-contain"
-              />
-            </div>
+          <motion.div
+            className="relative h-[500px] w-full group"
+            variants={fadeInUp}
+          >
+            <a
+              href="https://docremasco.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full w-full"
+            >
+              <div className="absolute right-0 bottom-0 w-[100%] h-auto transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/macdocremasco.png"
+                  alt="Desktop View"
+                  width={800}
+                  height={450}
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute right-[50%] top-[50%] w-[100%] h-auto z-10 transition-transform duration-300 group-hover:translate-y-[-8px]">
+                <Image
+                  src="/celldocremasco.png"
+                  alt="Mobile View"
+                  width={700}
+                  height={1400}
+                  className="object-contain"
+                />
+              </div>
+            </a>
           </motion.div>
 
-          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
-            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
-              <Image
-                src="/macentrevistaperfeita.png"
-                alt="Desktop View"
-                width={800}
-                height={450}
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10">
-              <Image
-                src="/cellentrevistaperfeita.png"
-                alt="Mobile View"
-                width={700}
-                height={1400}
-                className="object-contain"
-              />
-            </div>
+          <motion.div
+            className="relative h-[500px] w-full group"
+            variants={fadeInUp}
+          >
+            <a
+              href="https://entrevistaperfeita.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full w-full"
+            >
+              <div className="absolute right-0 bottom-0 w-[100%] h-auto transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/macentrevistaperfeita.png"
+                  alt="Desktop View"
+                  width={800}
+                  height={450}
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10 transition-transform duration-300 group-hover:translate-y-[-8px]">
+                <Image
+                  src="/cellentrevistaperfeita.png"
+                  alt="Mobile View"
+                  width={700}
+                  height={1400}
+                  className="object-contain"
+                />
+              </div>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -123,46 +143,66 @@ export default function Projects() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20"
           variants={container}
         >
-          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
-            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
-              <Image
-                src="/macmaxcrypto.png"
-                alt="Desktop View"
-                width={800}
-                height={450}
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute right-[50%] top-[50%] w-[100%] h-auto z-10">
-              <Image
-                src="/cellmaxcrypto.png"
-                alt="Mobile View"
-                width={700}
-                height={1400}
-                className="object-contain"
-              />
-            </div>
+          <motion.div
+            className="relative h-[500px] w-full group"
+            variants={fadeInUp}
+          >
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full w-full"
+            >
+              <div className="absolute right-0 bottom-0 w-[100%] h-auto transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/macmaxcrypto.png"
+                  alt="Desktop View"
+                  width={800}
+                  height={450}
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute right-[50%] top-[50%] w-[100%] h-auto z-10 transition-transform duration-300 group-hover:translate-y-[-8px]">
+                <Image
+                  src="/cellmaxcrypto.png"
+                  alt="Mobile View"
+                  width={700}
+                  height={1400}
+                  className="object-contain"
+                />
+              </div>
+            </a>
           </motion.div>
 
-          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
-            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
-              <Image
-                src="/mactotemhub.png"
-                alt="Desktop View"
-                width={800}
-                height={450}
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10">
-              <Image
-                src="/celltotemhub.png"
-                alt="Mobile View"
-                width={700}
-                height={1400}
-                className="object-contain"
-              />
-            </div>
+          <motion.div
+            className="relative h-[500px] w-full group"
+            variants={fadeInUp}
+          >
+            <a
+              href="https://food-totem-hub.vercel.app/mc-donalds/menu?consumptionMethod=DINE_IN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full w-full"
+            >
+              <div className="absolute right-0 bottom-0 w-[100%] h-auto transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/mactotemhub.png"
+                  alt="Desktop View"
+                  width={800}
+                  height={450}
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10 transition-transform duration-300 group-hover:translate-y-[-8px]">
+                <Image
+                  src="/celltotemhub.png"
+                  alt="Mobile View"
+                  width={700}
+                  height={1400}
+                  className="object-contain"
+                />
+              </div>
+            </a>
           </motion.div>
         </motion.div>
 
