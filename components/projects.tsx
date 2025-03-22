@@ -119,6 +119,53 @@ export default function Projects() {
           </motion.div>
         </motion.div>
 
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20"
+          variants={container}
+        >
+          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
+            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
+              <Image
+                src="/macmaxcrypto.png"
+                alt="Desktop View"
+                width={800}
+                height={450}
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute right-[50%] top-[50%] w-[100%] h-auto z-10">
+              <Image
+                src="/cellmaxcrypto.png"
+                alt="Mobile View"
+                width={700}
+                height={1400}
+                className="object-contain"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
+            <div className="absolute right-0 bottom-0 w-[100%] h-auto">
+              <Image
+                src="/mactotemhub.png"
+                alt="Desktop View"
+                width={800}
+                height={450}
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10">
+              <Image
+                src="/celltotemhub.png"
+                alt="Mobile View"
+                width={700}
+                height={1400}
+                className="object-contain"
+              />
+            </div>
+          </motion.div>
+        </motion.div>
+
         <motion.div className="grid gap-8" variants={container}>
           {projects.map((project, index) => (
             <motion.div
