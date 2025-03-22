@@ -100,7 +100,7 @@ export default function Projects() {
           <motion.div className="relative h-[500px] w-full" variants={fadeInUp}>
             <div className="absolute right-0 bottom-0 w-[100%] h-auto">
               <Image
-                src="/macdocremasco.png"
+                src="/macentrevistaperfeita.png"
                 alt="Desktop View"
                 width={800}
                 height={450}
@@ -109,7 +109,7 @@ export default function Projects() {
             </div>
             <div className="absolute left-[50%] top-[50%] w-[100%] h-auto z-10">
               <Image
-                src="/celldocremasco.png"
+                src="/cellentrevistaperfeita.png"
                 alt="Mobile View"
                 width={700}
                 height={1400}
